@@ -9,6 +9,7 @@ namespace TestBepinexPlugin2
     [BepInPlugin(MyPluginInfo.PLUGIN_GUID, MyPluginInfo.PLUGIN_NAME, MyPluginInfo.PLUGIN_VERSION)]
     [BepInDependency("BMX.LobbyCompatibility", BepInDependency.DependencyFlags.HardDependency)]
     [LobbyCompatibility(CompatibilityLevel.Everyone, VersionStrictness.None)]
+    [BepInDependency(LethalLib.Plugin.ModGUID)]
     public class TestBepinexPlugin2 : BaseUnityPlugin
     {
         public static TestBepinexPlugin2 Instance { get; private set; } = null!;
